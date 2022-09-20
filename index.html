@@ -66,6 +66,21 @@
             color: rgb(216, 24, 107);
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
+
+        #chocolate  {
+            width: 200px;
+
+        }
+
+        .chocolate__price {
+            text-align: center;
+            color: blue;
+        }
+
+        #mint {
+            
+            width: 200px;
+        }
     </style>
 </head>
 
@@ -84,10 +99,16 @@
                 <section class="ice-cream">
                     <p>Original Ice-cream</p>
                     <p>$5.99</p>
-                    <p>Chocolate Ice-cream</p>
-                    <p>$7.99</p>
-                    <p>Vanilla Ice-cream</p>
-                    <p>$6.50</p>
+                    <article class="ice-cream__chocolate">
+                        <img id="chocolate" src="img/ice-cream-flavors-chocolate.webp" alt="chocolate__flavor">
+                        <p>Chocolate Ice-cream</p>
+                        <p class="chocolate__price">$7.99</p>
+                    </article>
+                    <article>
+                        <img id="mint" src="img/ice-cream-flavors-mint-chocolate-chip.webp" alt="mint__flavor">
+                        <p>Mint Ice-cream</p>
+                        <p>$6.50</p>
+                    </article>
                     <p>Strawberry Ice-cream</p>
                     <p>$8.75</p>
                     <p>Banana Ice-cream</p>
