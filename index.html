@@ -11,45 +11,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ice-cream Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Ice-cream Cafe</title>    
 </head>
-
 <body>
     <div class="welcome">
-        <header class="welcome__guests">
-            <h1>Hello dear guest!</h1>
-            <h3>Welcome to our cafe!</h3>
-            <h3>In our menu you can choose ice-cream for any taste and price.</h3>
+        <header id="header">
+            <nav id="nav-bar">
+                <div class="header__logo">
+                    <img id="header-img" src="https://img.icons8.com/external-photo3ideastudio-gradient-photo3ideastudio/64/000000/external-ice-cream-restaurant-photo3ideastudio-gradient-photo3ideastudio.png" alt="Cafe">
+                    <h1>Ice-cream Cafe</h1>
+                </div>
+                <div class="header__menu">
+                    <a href="#menu" class="menu__item">Menu</a>
+                    <a href="#gallery" class="menu__item">Gallery</a>
+                    <a href="#contacts" class="menu__item">Contacts</a>
+                </div>
+            </nav>
         </header>
-        <main>
-            <article>
-                <section class="menu__ice-cream">
-                    <h2>Menu</h2>
-                </section>
-                <section class="ice-cream">
-                    <p>Original Ice-cream</p>
-                    <p>$5.99</p>
-                    <article class="ice-cream__chocolate">
-                        <img id="chocolate" src="img/ice-cream-flavors-chocolate.webp" alt="chocolate__flavor">
-                        <p>Chocolate Ice-cream</p>
-                        <p class="chocolate__price">$7.99</p>
-                    </article>
-                    <article>
-                        <img id="mint" src="img/ice-cream-flavors-mint-chocolate-chip.webp" alt="mint__flavor">
-                        <p>Mint Ice-cream</p>
-                        <p>$6.50</p>
-                    </article>
-                    <img id="strawberry"
-                    <p>Strawberry Ice-cream</p>
-                    <p>$8.75</p>
-                    <p>Banana Ice-cream</p>
-                    <p>$6.99</p>
-                </section>
-            </article>
+        <main class="container">
+            <section id="menu">
+                <h2>Menu</h2>
+                <img id="vanilla" src="img/vanilla-ice-cream.webp" alt="vanilla__flavor">
+                <p>Vanilla Ice-cream</p>
+                <p>$5.99</p>
+                <img id="chocolate" src="img/ice-cream-flavors-chocolate.webp" alt="chocolate__flavor">
+                <p>Chocolate Ice-cream</p>
+                <p>$7.99</p>
+                <img id="mint" src="img/ice-cream-flavors-mint-chocolate-chip.webp" alt="mint__flavor">
+                <p>Mint Ice-cream</p>
+                <p>$6.50</p>
+                <img id="strawberry" src="img/strawberry-ice-cream-500x500.jpg" alt="strawberry__flavor">
+                <p>Strawberry Ice-cream</p>
+                <p>$8.75</p>
+                <img id="banana" src="img/frozen-banana-icecream.png" alt="banana__flavor">
+                <p>Banana Ice-cream</p>
+                <p>$6.99</p>
+            </section>
+            <section id="gallery">
+                <h2>Gallery</h2>
+                <div class="gallery__container">
+                    <img src="img/ice-cream-flavors-cookies-n-cream.jpg">
+                    <img src="img/ice-cream-flavors-featured-1.jpg">
+                    <img src="img/images.jpeg">
+                    <img src="img/treat-dreams-pure-michigan-ice-cream.jpg">
+                </div>
+                <div class="video__container">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/qMxjyKYZj0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section id="contacts">
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST" required>
+                    <input id="email" name="email" type="email" placeholder="Enter your email*" required>
+                    <textarea id="text" name="message" placeholder="Type your question*" required></textarea>
+                    <input id="submit" type="submit" value="Send" class="btn">
+                </form>
+            </section>
         </main>
         <footer>
             <div class="socials">
-                <h2>Follow Us</h2>
+                <h3>Follow Us</h3>
                 <a href="https:/facebook.com">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 172 172"
                         style=" fill:#000000;">
